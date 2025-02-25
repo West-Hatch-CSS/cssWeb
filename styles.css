@@ -61,6 +61,11 @@ header {
     font-size: 1.8rem; /* Increased from 1.6rem */
 }
 
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Navigation */
 nav {
     position: static;
