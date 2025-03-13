@@ -28,8 +28,13 @@ header {
     z-index: 1000;
     padding: 1rem 0.5rem 0.5rem; /* More padding on top, less on bottom */
     display: flex;
-    flex-direction: column;
     gap: 0.25rem; /* Drastically reduced from 1rem */
+}
+
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
 }
 
 .header-container {
