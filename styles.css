@@ -511,6 +511,7 @@ footer {
 .page-title {
     color: white;
     padding-left: 1rem;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 1100px) {
@@ -645,4 +646,10 @@ section li {
 .white-button:hover {
     background-color: lightgray;
     color: black;
+}
+
+.hide-mobile {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
