@@ -45,6 +45,46 @@
 
     <h2 class="page-title">Our Blog & Social Media</h2>
 
+    <script>
+        const blogContainer = document.getElementById('blog-posts');
+        const blogFolder = 'blog-posts';  // Folder where the .txt files are stored
+        const postFiles = ['post-1.txt'];  // List your post filenames here (e.g., 'post-1.txt')
+
+        // Function to fetch and process each post
+        postFiles.forEach(postFile => {
+            fetch(`${blogFolder}/${postFile}`)
+                .then(response => response.text())
+                .then(text => {
+                    // Split the text into an array of lines
+                    const lines = text.split('\n');
+                    const dateAndAuthor = lines[0].split(' By ');  // Split the date and author
+                    const date = dateAndAuthor[0];
+                    const author = dateAndAuthor[1];
+
+                    const quote = lines[1].replace('"', '').replace('–', '-').trim();  // Clean up quote
+
+                    // Remaining lines are the body of the blog post
+                    const bodyContent = lines.slice(2).join('<br>');  // Join remaining lines into body content
+                    
+                    // Create the HTML for this blog post
+                    const postHtml = `
+                        <article>
+                            <h3>${date}</h3>
+                            <h4>By ${author}</h4>
+                            <blockquote>"${quote}"</blockquote>
+                            <p>${bodyContent}</p>
+                        </article>
+                    `;
+
+                    // Append the post to the container
+                    blogContainer.innerHTML += postHtml;
+                })
+                .catch(error => {
+                    console.error('Error fetching post:', postFile, error);
+                });
+        });
+    </script>
+
     <article class="blog-entry">
         <h3>March 31st, 2025 By Hannah Javed</h3>
         <h3>"Technology is best when it brings people together." – Matt Mullenweg</h3>

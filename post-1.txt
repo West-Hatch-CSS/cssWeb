@@ -1,0 +1,17 @@
+April 31st, 2025 By Samuel Impossible
+
+"Technology like art is a soaring exercise of the human imagination." – Daniel Testing
+
+Today’s meeting of the West Hatch Computer Science Society marked an exciting step Testing as we continued development on our original text-based video game, Wherever Whenever.
+
+Our Testing Team made progress by laying the foundations for the console prototype version of the game. They designed the conversation structure for player interaction, and made key decisions about the aesthetic and style of the user interface. These choices will shape the player's experience and immerse them in the narrative world.
+
+In addition, the Design Team brought the game's story to life by creating an engaging storyboard and script. They also began the early development of images that will visually support the game's scenes and enhance storytelling.
+
+Looking ahead, we’re hoping to make even more progress in our next session. Our goal is to finalise the game’s script and begin the coding phase of development.
+
+Thank you for reading West Hatch Computer Science Society's blog. Whether you're currently a member or someone new looking to get involved, we are excited to welcome new members and new ideas.
+
+Until next time, keep innovating and coding!
+
+Testing
